@@ -7,10 +7,9 @@
 
     <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
 
-
     <!-- <link rel="stylesheet" type="text/css" href="css/index.css"> -->
 </head>
-<body>
+<body onload="checkCookie()">
 
 <header id="banner">
     <img id="logo" src="logo/logo.png" align="center">
@@ -19,11 +18,11 @@
 
 <nav>
     <div id="topMenu">
-        <ul>
+        <ul class="top-menu-ul">
             <li><a href="">Praesentium</a></li>
-            <li><a href="">Voluptatum</a></li>
+            <li><a href="">Voluptatum </a></li>
             <li><a href="">Dignissimos</a></li>
-            <li><a href="">Blanditiis</a></li>
+            <li><a href="">Blanditiis </a></li>
         </ul>
 
    </div>
@@ -31,18 +30,21 @@
 
 <!-- Article of the page -->
 <div>
-    <p id="p1-article">Sed ut perspiciatis unde omnis iste natus error<br>
-               sit voluptatem sit amet tempor</p><br>
+    <p id="p1-article">Sed ut perspiciatis unde omnis iste natus error sit
+        <br>voluptatem sit amet tempor</p>
+
+
+    <p id="p2-article">Sed ut perspiciatis unde omnis iste natus error sit voluptate</p>
 </div>
 
-<p id="p2-article">Sed ut perspiciatis unde omnis iste natus error sit voluptate</p>
 
 <!--Registration Form-->
-<h1 id="h1-registration">Registration Form</h1>
+<p id="p-registration">Registration Form</p>
 
-    <div id="section-center">
-        <p>Name<input id="name" style="height:41px; type="name="Name" value=""></p><br><br>
-        <p>Email <input id="email" style="height:41px"name="Email" value=""></p><br><br>
+<div id="section-center">
+        <form id="reg-form" action="">
+        <p>Name <input id="name" style="height:41px;" name="Name" ></p><br><br>
+        <p>Email <input id="email" style="height:41px" name="Email" value=""></p><br><br>
         <p>Date of Birth
 
 
@@ -150,78 +152,61 @@
         </select></p>
 
     <nav id="nav">
-            <p id="paragraph"> <input id="box" style="height:17px;" type="checkbox" name="Name" value="">&nbsp;Proin sit amet lectus venenatis,
+        <p id="paragraph"> <input id="box" style="height:17px;" type="checkbox" value="">&nbsp;Proin sit amet lectus venenatis,
                 consectetur<br> magna vitae, convallis diam. Nullam iaculis.
-            </p>
+        </p>
 
 
         <p align="right">
-           <a href=""><input id="submit" href="" style="color: white" type="submit" value="Submit"></a>
+           <input id="submit" style="color: white" type="button" value="Submit" onclick="writeCookie()" >
         </p>
     </nav>
+        </form>
 </div>
-
 
     <img id="image" src="logo/cards.png"  style="width:338px;height:295px;">
 
-<nav>
-    <ul>
-        <li><a href="#">London</a></li>
-        <li><a href="#">Paris</a></li>
-        <li><a href="#">Tokyo</a></li>
-    </ul>
 
-</nav>
-<nav>
-    <ul>
-        <li><a href="#">London</a></li>
-        <li><a href="#">Paris</a></li>
-        <li><a href="#">Tokyo</a></li>
-    </ul>
+<footer id="bottomMenu">
+    <nav class="nav-bottom">
+        <ul>SUSPENDISSE
+            <li><a href="#">Quisque</a></li>
+            <li><a href="#">Faucibus</a></li>
+            <li><a href="#">Sapien</a></li>
+            <li><a href="#">Hendrerit</a></li>
+        </ul>
+    </nav>
+    <nav class="nav-bottom">
+        <ul>PORTA
+            <li><a href="#">Mauris</a></li>
+            <li><a href="#">Suscipit</a></li>
+            <li><a href="#">At ipsum</a></li>
+            <li><a href="#">Vehicula</a></li>
+        </ul>
+    </nav>
 
-</nav>
+    <nav class="nav-bottom">
+        <ul>FEUGIAT
+            <li><a href="#">Pellentesque</a></li>
+            <li><a href="#">Accumsan</a></li>
+            <li><a href="#">Velit in urna</a></li>
+            <li><a href="#">Faucibus</a></li>
+        </ul>
+    </nav>
 
-<!-- For menu below the page
+    <nav class="nav-bottom">
+        <ul>PLACERAT
+            <li><a href="#">Vitae</a></li>
+            <li><a href="#">Convallis</a></li>
+            <li><a href="#">Augue</a></li>
+            <li><a href="#">Aliquam</a></li>
+        </ul>
+    </nav>
+</footer>
 
 
-
-<table id="bottomMenu" style="width: 100%">
-    <tr>
-        <th>SUSPENDISSE</th>
-        <th>PORTA</th>
-        <th>FEUGIAT</th>
-        <th>PLACERAT</th>
-    </tr>
-    <tr>
-        <td>Quisque</td>
-        <td>Mauris</td>
-        <td>Pellentesque</td>
-        <td>Vitae</td>
-    </tr>
-    <tr>
-        <td>Faucibus</td>
-        <td>Suscipit</td>
-        <td>Accumsan</td>
-        <td>Convallis</td>
-    </tr>
-    <tr>
-        <td>Sapien</td>
-        <td>At ipsum</td>
-        <td>Velit in urna</td>
-        <td>Augue</td>
-    </tr>
-
-    <tr>
-        <td>Hendrerit</td>
-        <td>Vehicula</td>
-        <td>Faucibus</td>
-        <td>Aliquam</td>
-    </tr>
-    <td style="height: 20px"></td>
-
-</table>
-
--->
+<script src="js/jquery-1.9.0.min.js"></script>
+<script src="js/cookie.js"></script>
 
 </body>
 </html>
